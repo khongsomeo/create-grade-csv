@@ -1,4 +1,4 @@
-# create-grade-csv
+# Create grade.csv file
 
 Preprocess grades from VNUHCM - US portal.
 
