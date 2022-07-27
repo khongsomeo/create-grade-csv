@@ -49,7 +49,8 @@ the command line:
 python create.py --input <newly-created html file> --output <result.csv> --bs
 ```
 
-Notice the `--bs` option.
+Notice the `--bs` option. Also, you don't need to eliminate html tags as I did.
+I remove them by security reason, since this repository is public.
 
 Example with previous `sample.html`:
 ```
