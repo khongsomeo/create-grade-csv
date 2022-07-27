@@ -8,6 +8,24 @@ Install required packages:
 pip install -r requirements.txt
 ```
 
+For command-line arguments detail, using
+```
+python create.py --help
+```
+
+Output:
+```
+usage: create.py [-h] --input INPUT --output OUTPUT [--pd | --no-pd] [--bs | --no-bs]
+
+optional arguments:
+  -h, --help       show this help message and exit
+  --input INPUT    Input text file
+  --output OUTPUT  Output csv file
+  --pd, --no-pd    Using pandas - input must be a text file
+  --bs, --no-bs    Using BeautifulSoup - input must be a saved html file
+```
+
+
 ### Using Pandas
 Login to Portal, choose "All grades", then copy the grade table and paste to 
 `sample.txt`. Run `create.py` from the command line:
@@ -39,8 +57,3 @@ python create.py --input sample.html --output sample.csv --bs
 ```
 
 Your formatted grades will be inside `sample.csv`. 
-
-For detail command-line arguments, using
-```
-python create.py --help
-```
