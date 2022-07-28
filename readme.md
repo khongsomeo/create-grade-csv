@@ -35,7 +35,7 @@ python create.py --input <newly-created file> --output <result.csv> --pd
 
 Notice the `--pd` option.
 
-Example with previous `sample.txt`:
+Example with [sample.txt](https://gist.github.com/trhgquan/206bc70ef0a9cd0ad1659e1ccf0029e9):
 ```
 python create.py --input sample.txt --output sample.csv --pd
 ```
@@ -52,7 +52,7 @@ python create.py --input <newly-created html file> --output <result.csv> --bs
 Notice the `--bs` option. Also, you don't need to eliminate html tags as I did.
 I remove them by security reason, since this repository is public.
 
-Example with previous `sample.html`:
+Example with [sample.html](https://gist.github.com/trhgquan/6155aa526d2161cda267f09b7cacbfbc):
 ```
 python create.py --input sample.html --output sample.csv --bs
 ```
