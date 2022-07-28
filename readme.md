@@ -57,4 +57,7 @@ Example with [sample.html](https://gist.github.com/trhgquan/6155aa526d2161cda267
 python create.py --input sample.html --output sample.csv --bs
 ```
 
-Your formatted grades will be inside `sample.csv`. 
+Your formatted grades will be inside `sample.csv`.
+
+## LICENSE
+This project is under the terms of [The GNU GPL v3.0](LICENSE)
