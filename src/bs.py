@@ -47,7 +47,8 @@ class BeautifulSoupProcessing:
             if len(grade) == 0:
                 continue
 
-            result_list.append([subject_name, int(credit), float(grade)])
+            # Append to the list, also adding a pseudo type
+            result_list.append([subject_name, int(credit), float(grade), 'BB'])
 
         return result_list
 

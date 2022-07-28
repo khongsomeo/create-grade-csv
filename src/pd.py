@@ -28,5 +28,8 @@ class PandasProcessing:
         df['course_id']= df['course_id'].apply(PandasProcessing.clean_course_code)
         df['course_credits'] = df['course_credits'].astype(int)
 
+        # Adding a pseudo type
+        df['type'] = 'BB'
+
         # Saving file as csv
         df.to_csv(self.__output_file, header = False, index = False)
