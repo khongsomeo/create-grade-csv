@@ -1,38 +1,38 @@
-'''Simple module to generate grade.csv file'''
+"""Simple module to generate grade.csv file"""
 
 import argparse
 from src.pd import PandasProcessing
 from src.bs import BeautifulSoupProcessing
 
 def main():
-    '''Main driver'''
+    """Main driver"""
 
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        '--input',
+        "--input",
         required = True,
-        help = 'Input text file'
+        help = "Input text file"
     )
     parser.add_argument(
-        '--output',
+        "--output",
         required = True,
-        help = 'Output csv file'
+        help = "Output csv file"
     )
     parser.add_argument(
-        '--pd',
+        "--pd",
         action = argparse.BooleanOptionalAction,
-        help = 'Using pandas - input must be a text file'
+        help = "Using pandas - input must be a text file"
     )
     parser.add_argument(
-        '--bs',
+        "--bs",
         action = argparse.BooleanOptionalAction,
-        help = 'Using BeautifulSoup - input must be a saved html file'
+        help = "Using BeautifulSoup - input must be a saved html file"
     )
 
     args = parser.parse_args()
 
     if args.pd is not None:
-        print('Preprocessing with Pandas')
+        print("Preprocessing with Pandas")
 
         creator = PandasProcessing(
             input_file = args.input,
@@ -42,7 +42,7 @@ def main():
         creator.process_and_write()
 
     elif args.bs is not None:
-        print('Preprocessing with BeautifulSoup')
+        print("Preprocessing with BeautifulSoup")
 
         creator = BeautifulSoupProcessing(
             input_file = args.input,
@@ -52,5 +52,5 @@ def main():
         creator.process_and_write()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

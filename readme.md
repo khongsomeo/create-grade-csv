@@ -1,5 +1,7 @@
 # Create grade.csv file
 
+[![Testing Python application](https://github.com/khongsomeo/create-grade-csv/actions/workflows/test.yml/badge.svg)](https://github.com/khongsomeo/create-grade-csv/actions/workflows/test.yml)
+
 Preprocess grades from VNUHCM - US portal.
 
 ## How-to?
