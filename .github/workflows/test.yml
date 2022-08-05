@@ -31,7 +31,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Download test files
-        run: bash get-test-data.sh
+        run: bash tests/getdata.sh
 
       - name: Running pytest
         run: python -m pytest tests -q --disable-warnings
